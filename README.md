@@ -47,8 +47,8 @@ This allows the procedure to focus on recent error log activity instead of proce
 
 *Ref 1: Stored Procedure*
 
-`![Error Log Monitoring Time Window](screenshots/01-error-log-time-window.png)`
-`![Error Log Monitoring Time Window](screenshots/01-error-log-time-window.png)`
+![Stored Procedure](https://github.com/Vishnupd/SQL-Server-Error-Log-Monitoring-and-Alerting/blob/main/SP1.png)`
+`![Stored Procedure](https://github.com/Vishnupd/SQL-Server-Error-Log-Monitoring-and-Alerting/blob/main/SP2.png)`
 
 ### 2. Create a Temporary Error Log Table
 
@@ -90,11 +90,6 @@ EXEC (@query)
 
 This allows the procedure to analyze recent SQL Server error log activity.
 
-*Ref 3: SQL Server Error Log Retrieval*
-This screenshot shows the execution of `xp_readerrorlog` and the retrieval of recent SQL Server error log entries.
-
-`![SQL Server Error Log Retrieval](screenshots/03-read-error-log.png)`
-
 ### 4. Detect Important Error Log Messages
 
 The procedure searches the retrieved error log entries for specific keywords:
@@ -114,12 +109,12 @@ The monitoring process focuses on three important categories:
 The number of matching records is stored in the `@count` variable.
 
 *Ref 4.1: Login Error Created*
-`![Error Detection and Filtering](screenshots/04-error-detection.png)`
+![Error Detection and Filtering](https://github.com/Vishnupd/SQL-Server-Error-Log-Monitoring-and-Alerting/blob/main/Login_Error.png)`
 
 *Ref 4.2: Error Detection and Filtering*
 This screenshot shows the filtering logic used to identify SQL Server errors, failed login attempts, and I/O related messages.
 
-`![Error Detection and Filtering](screenshots/04-error-detection.png)`
+![Error Detection and Filtering](https://github.com/Vishnupd/SQL-Server-Error-Log-Monitoring-and-Alerting/blob/main/Login_Error_Query%20Check.png)`
 
 ### 5. Generate an HTML Error Report
 
@@ -161,7 +156,7 @@ This provides an automated notification whenever a relevant error is detected in
 *Ref 6: SQL Server Error Email Alert*
 This screenshot shows the Database Mail configuration and automated error notification.
 
-`![SQL Server Error Email Alert](screenshots/06-error-email-alert.png)`
+![SQL Server Error Email Alert](https://github.com/Vishnupd/SQL-Server-Error-Log-Monitoring-and-Alerting/blob/main/SP_Execution.png)`
 
 ### 7. Receive and Review the Error Log Alert
 
@@ -179,7 +174,7 @@ The server name is also included in the email subject to help identify which SQL
 *Ref 7: Received SQL Server Error Alert*
 This screenshot shows the received email containing the detected SQL Server error log entries.
 
-`![Received SQL Server Error Alert](screenshots/07-received-error-alert.png)`
+![Received SQL Server Error Alert](https://github.com/Vishnupd/SQL-Server-Error-Log-Monitoring-and-Alerting/blob/main/Email_Alert.png)`
 
 ### 8. Investigate and Troubleshoot Detected Errors
 
