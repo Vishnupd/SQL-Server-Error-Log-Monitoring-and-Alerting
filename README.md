@@ -109,6 +109,7 @@ The monitoring process focuses on three important categories:
 The number of matching records is stored in the `@count` variable.
 
 *Ref 4.1: Login Error Created*
+
 ![Error Detection and Filtering](https://github.com/Vishnupd/SQL-Server-Error-Log-Monitoring-and-Alerting/blob/main/Login_Error.png)`
 
 *Ref 4.2: Error Detection and Filtering*
